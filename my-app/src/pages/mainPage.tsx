@@ -1,9 +1,7 @@
-import React, { ReactNode } from "react";
-
-interface MainPageInterface {
-  children: ReactNode;
+import TestComponent from "../service/test";
+const MainPage = ():JSX.Element => {
+  
+  return (<div><TestComponent /></div>
+  )
 }
-const MainPage = ():React.FC => {
-
-  return (<div></div>)
-}
+export default MainPage;
