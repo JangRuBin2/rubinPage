@@ -1,7 +1,7 @@
-import TestComponent from "../service/test";
+import Intro from "../service/intro";
 const IntroPage = ():JSX.Element => {
   
-  return (<div><TestComponent /></div>
+  return (<div>인트로 페이지<Intro /></div>
   )
 }
 export default IntroPage;

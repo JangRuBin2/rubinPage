@@ -1,7 +1,6 @@
-import TestComponent from "../service/test";
 const AboutMePage = ():JSX.Element => {
   
-  return (<div><TestComponent /></div>
+  return (<div>내 소개</div>
   )
 }
 export default AboutMePage;
