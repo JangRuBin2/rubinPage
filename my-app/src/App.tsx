@@ -1,9 +1,15 @@
 import './App.css';
-import MainPage from "./pages/mainPage";
+import AboutMePage from "./pages/aboutMePage";
+import FunnyPage from "./pages/funnyPage";
+import IntroPage from "./pages/introPage";
+import PorfolPage from "./pages/portfolioPage";
 function App() {
   return (
     <>
-      <MainPage />
+      <IntroPage/>
+      <AboutMePage />
+      <PorfolPage/>
+      <FunnyPage />
     </>
   );
 }

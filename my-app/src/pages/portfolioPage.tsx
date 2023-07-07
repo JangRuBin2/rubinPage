@@ -1,7 +1,7 @@
 import TestComponent from "../service/test";
-const MainPage = ():JSX.Element => {
+const porfolPage = ():JSX.Element => {
   
   return (<div><TestComponent /></div>
   )
 }
-export default MainPage;
+export default porfolPage;
