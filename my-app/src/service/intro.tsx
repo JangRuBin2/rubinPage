@@ -5,7 +5,8 @@ const Intro = ():JSX.Element => {
   <div className="container">
     <div className="introBox">
       <img src={FlySqr} alt="이미지 설명" style={{width : '200px', height : '200px'}}/>
-        <h3>루빈</h3>
+        <h2>RuBin</h2>
+        <h4>fullstack developer</h4>
     </div>
   </div>)
 }
