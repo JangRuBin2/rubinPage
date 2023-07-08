@@ -1,11 +1,16 @@
 /* 바디 사이즈 */
 body {
   box-sizing: border-box;
-  width: 100vw;
-  height: 100vh;
   margin: 0;
   padding: 0;
   background-color: #2e332e;
+}
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
 }
 /* 페이지 컴포넌트 최상위 요소 */
 .wrap {
@@ -39,6 +44,8 @@ body {
   }
 }
 .slide-down-fade-in {
+  width: 94%;
+  height: 94%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -58,6 +65,8 @@ body {
   }
 }
 .slide-up-fade-in {
+  width: 94%;
+  height: 94%;
   display: flex;
   align-items: center;
   justify-content: center;
