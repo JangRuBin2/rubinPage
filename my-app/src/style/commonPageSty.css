@@ -62,6 +62,6 @@ body {
   align-items: center;
   justify-content: center;
   animation-name: slideUpFadeIn;
-  animation-duration: 1s;
+  animation-duration: 1.5s;
   animation-fill-mode: both;
 }
