@@ -1,7 +1,10 @@
-
+import AboutMe from "../service/whoisRB";
 const AboutMePage = ():JSX.Element => {
   
-  return (<div className="wrap">내 소개</div>
+  return (
+  <div className="wrap">
+    <AboutMe />
+  </div>
   )
 }
 export default AboutMePage;
