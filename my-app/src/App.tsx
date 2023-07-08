@@ -12,28 +12,28 @@ function App() {
   // 페이지 상태 관리
   const [currentIndex, setCurrentIndex] = useState(0);
   // 애니메이션 상태 관리
-  const [animationClassName, setAnimationClassName] = useState("fade-in");
+  const [animationClassName, setAnimationClassName] = useState("slide-down-fade-in");
   // 페이지 index 갱신 함수
   const changPage = (direction : string)=> {
     // 애니메이션 클래스 제거
     setAnimationClassName("");
-    if (direction === 'next') {
+    if (direction === 'up') {
       setCurrentIndex((currentIndex + 1)% pages.length);
-    } else if (direction === 'prev'){
+    } else if (direction === 'down'){
       setCurrentIndex((currentIndex - 1 + pages.length)%pages.length)
     }
 
     setTimeout(() => {
-      setAnimationClassName("fade-in"); // 애니메이션 클래스를 다시 적용합니다.
+      setAnimationClassName(direction === "up" ? "slide-up-fade-in" : "slide-down-fade-in"); // 애니메이션 클래스를 다시 적용합니다.
     }, 50);
   }
   return (
     <>
-      <div style={{display:"flex", justifyContent : 'center'}} onClick={() => changPage("prev")}>
+      <div style={{display:"flex", justifyContent : 'center'}} onClick={() => changPage("up")}>
         <UpBtn />
       </div>
       <div className={animationClassName}>{pages[currentIndex]}</div>
-      <div style={{display:"flex", justifyContent : 'center'}} onClick={() => changPage("next")}>
+      <div style={{display:"flex", justifyContent : 'center'}} onClick={() => changPage("down")}>
         <DownBtn />
       </div>
     </>
