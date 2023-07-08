@@ -1,3 +1,6 @@
+body {
+  background-color: #2e332e;
+}
 /* 페이지 컴포넌트 최상위 요소 */
 .wrap {
   width : 1920px;
@@ -17,3 +20,18 @@
   align-items: center;
 }
 /*! '컴포넌트 명 + box'는 각 컴포넌트별로 위치 및 정렬 */
+
+/* 페이지 불러올 때 애니메이션 */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.fade-in {
+  animation-name: fadeIn;
+  animation-duration: 1s; /* 애니메이션 지속 시간 조절 */
+  animation-fill-mode: both;
+}
