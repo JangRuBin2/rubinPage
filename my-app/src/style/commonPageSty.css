@@ -1,10 +1,16 @@
+/* 바디 사이즈 */
 body {
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
   background-color: #2e332e;
 }
 /* 페이지 컴포넌트 최상위 요소 */
 .wrap {
   width : 1920px;
-  height: 1080px;
+  height: 810px;
   background-color: #2e332e;
   color: white;
   display: flex;
