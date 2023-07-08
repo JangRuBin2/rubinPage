@@ -29,11 +29,11 @@ function App() {
   }
   return (
     <>
-      <div onClick={() => changPage("prev")}>
+      <div style={{display:"flex", justifyContent : 'center'}} onClick={() => changPage("prev")}>
         <UpBtn />
       </div>
       <div className={animationClassName}>{pages[currentIndex]}</div>
-      <div onClick={() => changPage("next")}>
+      <div style={{display:"flex", justifyContent : 'center'}} onClick={() => changPage("next")}>
         <DownBtn />
       </div>
     </>
