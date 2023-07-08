@@ -4,8 +4,8 @@ import IntroPage from "./pages/introPage";
 import PorfolPage from "./pages/portfolioPage";
 // 각 페이지 공용 css
 import { useState } from "react";
+import { DownBtn, UpBtn } from "./service/mainBtn";
 import './style/commonPageSty.css';
-
 function App() {
   // 슬라이드로 관리할 페이지 배열
   const pages = [<IntroPage />, <AboutMePage />, <PorfolPage />, <FunnyPage />];
@@ -21,9 +21,13 @@ function App() {
   }
   return (
     <>
-      <button onClick={() => changPage("prev")}>{"<"}</button>
+      <div onClick={() => changPage("prev")}>
+        <UpBtn />
+      </div>
       <div>{pages[currentIndex]}</div>
-      <button onClick={() => changPage("next")}>{">"}</button>
+      <div onClick={() => changPage("next")}>
+        <DownBtn />
+      </div>
     </>
   );
 }
