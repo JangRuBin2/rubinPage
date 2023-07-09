@@ -9,7 +9,7 @@ const Funny = (): JSX.Element => {
 // 자동 재생
   const opts = {
     height: '450px',
-    width: '600px',
+    width: '800px',
     playerVars: {
     autoplay: 1,
     },
