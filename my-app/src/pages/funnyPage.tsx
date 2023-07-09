@@ -1,7 +1,7 @@
 
 const FunnyPage = ():JSX.Element => {
   
-  return (<div className="wrap">재밌는 요소 페이지</div>
+  return (<div className="wrap">내용을 추가 할 예정입니다.</div>
   )
 }
 export default FunnyPage;
