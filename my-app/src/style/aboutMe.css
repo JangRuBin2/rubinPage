@@ -6,10 +6,10 @@
 .meTitle {
   display :flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-direction: column;
   width: 40%;
-  height: 100%;
+  height: 80%;
 }
 
 /* 날아오는 애니메이션 */
@@ -26,4 +26,6 @@
 
 .flyInDiv {
   animation: fly-in 1s ease-out;
+  width: 50%;
+  height: 90%;
 }
