@@ -2,7 +2,7 @@ import Portfolio from "../service/portfolio";
 const PortfolPage = ():JSX.Element => {
   
   return (
-  <div className="wrap">
+  <div>
     <Portfolio />
   </div>
   )

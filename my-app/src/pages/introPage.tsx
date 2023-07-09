@@ -3,7 +3,7 @@ import Intro from "../service/intro";
 const IntroPage = ():JSX.Element => {
   
   return (
-    <div className="wrap">
+    <div>
       <Intro />
     </div>
   )

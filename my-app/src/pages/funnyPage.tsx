@@ -1,7 +1,7 @@
 import Funny from "../service/funny";
 const FunnyPage = ():JSX.Element => {
   return (
-  <div className="wrap">
+  <div>
     <Funny />
   </div>
   )
