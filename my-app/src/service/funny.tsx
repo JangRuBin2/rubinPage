@@ -8,10 +8,10 @@ const Funny = (): JSX.Element => {
   const [currentVideoId, setCurrentVideoId] = useState('OzmF8WZ5QgQ');
 // 자동 재생
   const opts = {
-    height: '400px',
-  width: '600px',
+    height: '450px',
+    width: '600px',
     playerVars: {
-      autoplay: 1,
+    autoplay: 1,
     },
   };
   // Props로 받아온 유튜브ID로 새로운 영상 실행
@@ -20,10 +20,10 @@ const Funny = (): JSX.Element => {
   };
 
   return (
-    <div className="container">
+      <div className='musicBox'>
       <YouTube videoId={currentVideoId} opts={opts} />
       <JukeBox onChangeVideoId={handleVideoChange} />
-    </div>
+      </div>
   );
 };
 
