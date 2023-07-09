@@ -1,8 +1,13 @@
 // jukebox.tsx
 import React from 'react';
+import BeautifulPeople from '../images/beautifulPeople.png';
 import Christan from '../images/christian.png';
+import Dive from '../images/dive.jpg';
+import GhostTown from '../images/ghostTown.png';
 import LeGrandBleu from '../images/leGrandBleu.png';
+import Mood from '../images/mood.png';
 import MySelf from '../images/mySelf.png';
+import Perfect from '../images/perfect.jpg';
 import LikeThis from '../images/springGang.png';
 
 interface JukeBoxProps {
@@ -18,7 +23,12 @@ const JukeBox: React.FC<JukeBoxProps> = ({ onChangeVideoId }) => {
     new Music(LikeThis, 'OzmF8WZ5QgQ', 'Like This'),
     new Music(LeGrandBleu, 'dVrqhetFunI', 'Le Grand Bleu'),
     new Music(Christan, 'Sqv5h2jT4No', 'Christian'),
-    new Music(MySelf, 'Sqv5h2jT4No', 'MySelf'),
+    new Music(MySelf, 'WiE_PJAglac', 'MySelf'),
+    new Music(Mood, 'O53n-OrzVAU', 'Mood'),
+    new Music(Perfect, 'cNGjD0VG4R8', 'Perfect'),
+    new Music(Dive, 'Wv2rLZmbPMA', 'Dive'),
+    new Music(BeautifulPeople, '74yb9E3WY1I', 'BeautifulPeople'),
+    new Music(GhostTown, 'prYbXj3zPfs', 'GhostTown'),
   ];
 
   return (
