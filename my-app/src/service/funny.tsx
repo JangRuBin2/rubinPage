@@ -5,7 +5,7 @@ import "../style/jukeBox.css";
 import JukeBox from './jukebox';
 
 const Funny = (): JSX.Element => {
-  const [currentVideoId, setCurrentVideoId] = useState('OzmF8WZ5QgQ');
+  const [currentVideoId, setCurrentVideoId] = useState('WiE_PJAglac');
 // 자동 재생
   const opts = {
     height: '450px',

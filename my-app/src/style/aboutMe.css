@@ -1,17 +1,14 @@
 .meBox {
   display:flex;
-  flexDirection:row;
-  justifyContent : space-around;
-  alignItems:center;
+  align-items: center;
 }
 .meTitle {
   display :flex;
-  alignItems:center;
-  justifyContent:center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
-.img {
-  border-radius: 3px;
-}
+
 /* 날아오는 애니메이션 */
 @keyframes fly-in {
   0% {
