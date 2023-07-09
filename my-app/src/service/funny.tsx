@@ -1,4 +1,5 @@
 import YouTube from 'react-youtube';
+import JukeBox from "./jukebox";
 const Funny = ():JSX.Element => {
   const videoId = 'OzmF8WZ5QgQ';
   const opts = {
@@ -11,6 +12,7 @@ const Funny = ():JSX.Element => {
   return (
   <div className="container">
     <YouTube videoId={videoId} opts={opts} />
+    <JukeBox />
   </div>
   )
 }
