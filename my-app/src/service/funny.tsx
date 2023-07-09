@@ -1,19 +1,18 @@
 // funny.tsx
 import { useState } from 'react';
 import YouTube from 'react-youtube';
+import "../style/jukeBox.css";
 import JukeBox from './jukebox';
 
 const Funny = (): JSX.Element => {
   const [currentVideoId, setCurrentVideoId] = useState('OzmF8WZ5QgQ');
-
+// 자동 재생
   const opts = {
-    height: '390',
-    width: '640',
     playerVars: {
       autoplay: 1,
     },
   };
-
+  // Props로 받아온 유튜브ID로 새로운 영상 실행
   const handleVideoChange = (videoId: string) => {
     setCurrentVideoId(videoId);
   };
