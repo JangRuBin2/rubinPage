@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "pulbic",
+    "public": "build",
     "ignore": [
       "firebase.json",
       "**/.*",
