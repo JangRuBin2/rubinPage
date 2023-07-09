@@ -1,6 +1,10 @@
-const porfolPage = ():JSX.Element => {
+import Portfolio from "../service/portfolio";
+const PortfolPage = ():JSX.Element => {
   
-  return (<div className="wrap">포폴 페이지</div>
+  return (
+  <div className="wrap">
+    <Portfolio />
+  </div>
   )
 }
-export default porfolPage;
+export default PortfolPage;
