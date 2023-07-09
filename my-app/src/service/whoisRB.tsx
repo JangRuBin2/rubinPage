@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import UmRB from "../images/umRubin.webp";
+import '../style/aboutMe.css';
 const AboutMe = () : JSX.Element=> {
   const [showNewDiv, setShowNewDiv] = useState(false);
   const handleShowNewDiv = () => {
@@ -7,15 +8,17 @@ const AboutMe = () : JSX.Element=> {
 };
   return (
       <div className="container">
-        <div style={{display:"flex",flexDirection:"column", justifyContent : "space-around", alignItems:"center"}}>
-          <div style={{display :"flex", alignItems:"center",justifyContent:"center"}}>
+        <div className='meBox'>
+          <div className='meTitle'>
             <img src={UmRB} alt="" style={{width : '310px', height : '350px'}}/>
+            <h2>flying squirrel</h2>
           </div>
-          <div>
-          <h2>안녕하세요. 튼튼한 개발자 장루빈입니다!</h2>
+          
           <div  onClick={handleShowNewDiv}>눌러줘 나를</div>
-          {showNewDiv && <div className="new-div">새로운 div</div>}
-          </div>
+          {showNewDiv && <h4>저는 새로운 것에 도전하는 것을 즐깁니다.<br/>
+            언어와 도구에 제약 받지 않고, 새로운 것에 거부감 없이 도전합니다.<br/>
+            제한 없이 다양한 환경에서 발전하는 개발자가 되겠습니다.
+            </h4>}
         </div>
       </div>
   )

@@ -1,0 +1,14 @@
+.meBox {
+  display:flex;
+  flexDirection:row;
+  justifyContent : space-around;
+  alignItems:center;
+}
+.meTitle {
+  display :flex;
+  alignItems:center;
+  justifyContent:center;
+}
+.img {
+  border-radius: 3px;
+}
