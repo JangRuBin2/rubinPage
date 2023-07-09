@@ -11,11 +11,12 @@ const AboutMe = () : JSX.Element=> {
       <div className="container">
         <div className='meBox'>
           <div className='meTitle'>
-            <img src={UmRB} alt="" style={{width : '310px', height : '350px'}}/>
+            <img src={UmRB} alt="" style={{width : '90%', height : '50%'}}/>
             <h2>flying squirrel</h2>
+            <div onClick={handleShowNewDiv}> {!showNewDiv ? <ToggleOff /> : <ToggleOn />}</div>
           </div>
           
-          <div  onClick={handleShowNewDiv}> {!showNewDiv ? <ToggleOff /> : <ToggleOn />}</div>
+          
           {showNewDiv && <h4 className="flyInDiv">저는 새로운 것에 도전하는 것을 즐깁니다.<br/>
             언어와 도구에 제약 받지 않고, 새로운 것에 거부감 없이 도전합니다.<br/>
             제한 없이 다양한 환경에서 발전하는 개발자가 되겠습니다.

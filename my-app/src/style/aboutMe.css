@@ -1,12 +1,15 @@
 .meBox {
   display:flex;
   align-items: center;
+  width: 100%;
 }
 .meTitle {
   display :flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  width: 40%;
+  height: 100%;
 }
 
 /* 날아오는 애니메이션 */
