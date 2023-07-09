@@ -1,6 +1,5 @@
 // jukebox.tsx
 import React from 'react';
-import JukeboxImage from '../images/jukebox.png';
 import LeGrandBleu from '../images/leGrandBleu.png';
 import LikeThis from '../images/springGang.png';
 interface JukeBoxProps {
@@ -19,9 +18,9 @@ const JukeBox: React.FC<JukeBoxProps> = ({ onChangeVideoId }) => {
 
   return (
     <>
-      <div className="jukeBox">
+      {/* <div className="jukeBox">
         <img src={JukeboxImage} alt="쥬크박스" style={{width:'400px', height:'500px'}}/>
-      </div>
+      </div> */}
       <div className="playList">
         {playList.map((music, index) => (
           <img

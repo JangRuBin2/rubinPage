@@ -6,10 +6,11 @@ import JukeBox from './jukebox';
 
 const Funny = (): JSX.Element => {
   const [currentVideoId, setCurrentVideoId] = useState('OzmF8WZ5QgQ');
+  const [mode, setMode] = useState<'theater' | 'jukebox'>('theater');
 // 자동 재생
   const opts = {
-    height: '1',
-  width: '1',
+    height: '400px',
+  width: '600px',
     playerVars: {
       autoplay: 1,
     },
@@ -21,9 +22,7 @@ const Funny = (): JSX.Element => {
 
   return (
     <div className="container">
-      <YouTube videoId={currentVideoId} opts={opts} style={{position : 'fixed',  top: '50%',
-    left: '50%',
-    transform: 'translate(-50%, -50%)',}}/>
+      <YouTube videoId={currentVideoId} opts={opts} />
       <JukeBox onChangeVideoId={handleVideoChange} />
     </div>
   );
