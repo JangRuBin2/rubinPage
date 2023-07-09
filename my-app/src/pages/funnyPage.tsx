@@ -1,7 +1,17 @@
-
+import YouTube from 'react-youtube';
 const FunnyPage = ():JSX.Element => {
-  
-  return (<div className="wrap">내용을 추가 할 예정입니다.</div>
+  const videoId = 'OzmF8WZ5QgQ';
+  const opts = {
+    height: '390',
+    width: '640',
+    playerVars: {
+      autoplay: 1,
+    },
+  };
+  return (
+  <div className="wrap">
+    <YouTube videoId={videoId} opts={opts} />
+  </div>
   )
 }
 export default FunnyPage;
