@@ -8,6 +8,8 @@ const Funny = (): JSX.Element => {
   const [currentVideoId, setCurrentVideoId] = useState('OzmF8WZ5QgQ');
 // 자동 재생
   const opts = {
+    height: '1',
+  width: '1',
     playerVars: {
       autoplay: 1,
     },
@@ -19,7 +21,9 @@ const Funny = (): JSX.Element => {
 
   return (
     <div className="container">
-      <YouTube videoId={currentVideoId} opts={opts} />
+      <YouTube videoId={currentVideoId} opts={opts} style={{position : 'fixed',  top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',}}/>
       <JukeBox onChangeVideoId={handleVideoChange} />
     </div>
   );
