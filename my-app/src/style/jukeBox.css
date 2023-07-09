@@ -11,3 +11,11 @@
   left: '50%';
   transform: 'translate(-50%, -50%)';
 } */
+.playList {
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  height: 450px;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}

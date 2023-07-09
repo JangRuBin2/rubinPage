@@ -1,7 +1,10 @@
 // jukebox.tsx
 import React from 'react';
+import Christan from '../images/christian.png';
 import LeGrandBleu from '../images/leGrandBleu.png';
+import MySelf from '../images/mySelf.png';
 import LikeThis from '../images/springGang.png';
+
 interface JukeBoxProps {
   onChangeVideoId: (videoId: string) => void;
 }
@@ -14,6 +17,8 @@ const JukeBox: React.FC<JukeBoxProps> = ({ onChangeVideoId }) => {
   const playList = [
     new Music(LikeThis, 'OzmF8WZ5QgQ', 'Like This'),
     new Music(LeGrandBleu, 'dVrqhetFunI', 'Le Grand Bleu'),
+    new Music(Christan, 'Sqv5h2jT4No', 'Christian'),
+    new Music(MySelf, 'Sqv5h2jT4No', 'MySelf'),
   ];
 
   return (
