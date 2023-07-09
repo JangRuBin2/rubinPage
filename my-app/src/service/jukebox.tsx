@@ -1,29 +1,41 @@
-import Jukebox from "../images/jukebox.png";
-import LeGrandBleu from "../images/leGrandBleu.png";
-import LikeThis from "../images/springGang.png";
+// jukebox.tsx
+import React from 'react';
+import JukeboxImage from '../images/jukebox.png';
+import LeGrandBleu from '../images/leGrandBleu.png';
+import LikeThis from '../images/springGang.png';
 
-const JukeBox = () : JSX.Element => {
-  class Music {
-    constructor(public imageUrl: string, public videoId: string, public title: string) {}
-  }
-  const playList = [new Music(LikeThis, 'OzmF8WZ5QgQ', 'Like This'),
-    new Music(LeGrandBleu, 'dVrqhetFunI', 'Le Grand Bleu'),];
+interface JukeBoxProps {
+  onChangeVideoId: (videoId: string) => void;
+}
+
+class Music {
+  constructor(public imageUrl: string, public videoId: string, public title: string) {}
+}
+
+const JukeBox: React.FC<JukeBoxProps> = ({ onChangeVideoId }) => {
+  const playList = [
+    new Music(LikeThis, 'OzmF8WZ5QgQ', 'Like This'),
+    new Music(LeGrandBleu, 'dVrqhetFunI', 'Le Grand Bleu'),
+  ];
+
   return (
     <>
-    <div className="jukeBox">
-      <img src={Jukebox} alt="쥬크박스" />
-    </div>
-    <div className="playList">
-    {playList.map((music, index) => (
+      <div className="jukeBox">
+        <img src={JukeboxImage} alt="쥬크박스" />
+      </div>
+      <div className="playList">
+        {playList.map((music, index) => (
           <img
             key={index}
             src={music.imageUrl}
             alt={`${index} 음악`}
             style={{ width: '200px', height: '200px' }}
+            onClick={() => onChangeVideoId(music.videoId)}
           />
         ))}
-    </div>
+      </div>
     </>
-  )
+  );
 };
+
 export default JukeBox;
