@@ -12,3 +12,14 @@
   flex-wrap: wrap;
   align-content: flex-start;
 }
+.musicBox iframe {
+  width: 800px;
+  height: 450px;
+}
+
+@media screen and (max-width: 450px) {
+  .musicBox iframe {
+    width: 1px;
+    height: 1px;
+  }
+}
