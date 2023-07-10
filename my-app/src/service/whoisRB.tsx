@@ -12,7 +12,7 @@ const AboutMe = () : JSX.Element=> {
       <div className="container">
         <div className='meBox'>
           <div className='meTitle'>
-            <img src={UmRB} alt="" style={{width : '300px', height : '400px'}}/>
+            <img src={UmRB} alt="내 사진"/>
             <h1>flying squirrel</h1>
             <div>
             <Toggle handleShowNewDiv={handleShowNewDiv} />

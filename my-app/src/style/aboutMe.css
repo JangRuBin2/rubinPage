@@ -11,6 +11,10 @@
   width: 40%;
   height: 80%;
 }
+.meTitle img {
+  width: 300px;
+  height: 400px;
+}
 @media screen and (max-width: 450px) {
   .meTitle img {
     width: 100%;
