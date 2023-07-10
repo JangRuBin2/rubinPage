@@ -1,0 +1,37 @@
+.close-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 10px; /* 버튼 주변에 패딩 추가 */
+  cursor: pointer; /* 마우스 오버 시 포인터로 변경 */
+}
+
+.close-btn {
+  width: 10px;
+  height: 10px;
+}
+.portfolioModal {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.modaltitle > img {
+  width: 400px;
+  height: 300px;
+  margin: 50px;
+}
+.modalContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.linkList {
+  display: flex;
+  flex-direction: row;
+}
+.linkList > span > img {
+  width: 80px;
+  height: 80px;
+}
