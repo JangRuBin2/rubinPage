@@ -14,10 +14,7 @@
   justify-content: center;
   background-color: #c7484a;
 }
-.portfolio-item img {
-  width: 100%;
-  height: auto;
-}
+
 .portfolioModal {
   position: fixed;
   width: 90%;
@@ -25,22 +22,10 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  background-color: white;
-  border: 1px solid gray;
+  background-color: gray;
+  border: 1px solid #c7484a;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-.close-btn {
-  position: absolute;
-  right: 0;
-  top: 0;
-  padding: 10px; /* 버튼 주변에 패딩 추가 */
-  cursor: pointer; /* 마우스 오버 시 포인터로 변경 */
-}
-
-.close-btn {
-  width: 10px;
-  height: 10px;
 }
