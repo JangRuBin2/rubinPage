@@ -12,7 +12,7 @@ interface StockTogetherModalProps {
 
 const portfolioContent = new PortfolioContent(
   'https://github.com/JangRuBin2/stockTogether',
-  'https://www.notion.so/kongukjae/Project-A-5-Hz-34c518401ee64f1093650ab5525aba16',
+  'https://www.notion.so/Project-A-5-Hz-02c2e2e2d9974bc9a061e388868d38d8',
   Stock
 );
 

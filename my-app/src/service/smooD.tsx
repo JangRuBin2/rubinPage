@@ -11,8 +11,8 @@ interface StockTogetherModalProps {
 }
 
 const portfolioContent = new PortfolioContent(
-  'https://github.com/JangRuBin2/stockTogether',
-  'https://www.notion.so/kongukjae/Project-A-5-Hz-34c518401ee64f1093650ab5525aba16',
+  'https://github.com/smoo-D/smooD',
+  'https://www.notion.so/Project-B-D-5c2a65c3cbfa4e3d920ace36546262a3',
   SmooD
 );
 
@@ -35,10 +35,10 @@ const StockTogetherModal = ({ handleClose }: StockTogetherModalProps): ReactElem
           </h3>
           <div className='linkList'>
           <span onClick={() => openLinkInNewTab(portfolioContent.githubLink)}>
-            <img src={Github} alt="" />
+            <img src={Github} alt="github 링크" />
           </span>
           <span onClick={() => openLinkInNewTab(portfolioContent.notionLink)}>
-            <img src={Notion} alt="" />
+            <img src={Notion} alt="노션 링크" />
           </span>
           </div>
         </div>

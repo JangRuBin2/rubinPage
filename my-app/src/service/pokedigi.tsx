@@ -11,8 +11,8 @@ interface StockTogetherModalProps {
 }
 
 const portfolioContent = new PortfolioContent(
-  'https://github.com/JangRuBin2/stockTogether',
-  'https://www.notion.so/kongukjae/Project-A-5-Hz-34c518401ee64f1093650ab5525aba16',
+  'https://github.com/NewDevs2/pokeXdigi',
+  'https://www.notion.so/NewDevs-b2c55037fd684db3ab87b139c703eab6',
   PokeDigi
 );
 

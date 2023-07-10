@@ -5,7 +5,7 @@ import SmooDImg from '../images/smooD.png';
 import Stock from "../images/stockT.png";
 // 모듈
 import "../style/portfolio.css";
-import PokedigiModal from './pokedigiModal';
+import PokedigiModal from './pokedigi';
 import SmooD from './smooD';
 import StockTogether from './stockTogether';
 const Portfolio = ():JSX.Element => {

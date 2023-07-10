@@ -1,7 +1,7 @@
 import { useState } from "react";
 import PokeDigi from "../images/pokeDigi.png";
 import "../style/portfolio.css";
-import PortfolioModal from './pokedigiModal';
+import PortfolioModal from './pokedigi';
 const PrjC = () : JSX.Element => {
   const [modal, setModal] = useState(false);
   const handleModal =()=> {
