@@ -28,7 +28,7 @@ const StockTogetherModal = ({ handleClose }: StockTogetherModalProps): ReactElem
           <img src={portfolioContent.imgUrl} alt="프로젝트 이미지" />
         </div>
         <div className='modalContent'>
-          <h1>smooD</h1>
+          <h2>smooD</h2>
           <h3>빠르고 편리한 길 찾기 서비스입니다.<br/>
               단축 버튼을 누르면 목적지를 가까운 경로순으로 리스트업 합니다.<br/>
               세개의 단축버튼은 사용자가 커스텀 할 수 있습니다.

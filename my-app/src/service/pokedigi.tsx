@@ -28,7 +28,7 @@ const StockTogetherModal = ({ handleClose }: StockTogetherModalProps): ReactElem
           <img src={portfolioContent.imgUrl} alt="프로젝트 이미지" />
         </div>
         <div className='modalContent'>
-          <h1>포케 x 디지</h1>
+          <h2>포케 x 디지</h2>
           <h3>포켓몬과 디지몬 캐릭터를 선택해 다른 사람과 대화하는 서비스입니다.<br/>
               회원가입을 해야 이용가능하게 구현했습니다.<br/>
               필드로 입장하면 랜덤으로 캐릭터가 선택되고, 다른 사람과 채팅이 가능합니다.

@@ -28,7 +28,7 @@ const StockTogetherModal = ({ handleClose }: StockTogetherModalProps): ReactElem
           <img src={portfolioContent.imgUrl} alt="프로젝트 이미지" />
         </div>
         <div className='modalContent'>
-          <h1>stockTogether</h1>
+          <h2>stockTogether</h2>
           <h3>초보도 쉽게 주식을 시도할 수 있는 서비스입니다.<br/>
               주식에 '탈것'의 형태를 도입하여, 주식 투자를 같이 하고 싶은 사람과 즐길 수 있습니다.<br/>
               서버로부터 주식 데이터를 실시간으로 받아 차트로 그립니다.

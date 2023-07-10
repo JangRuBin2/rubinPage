@@ -24,7 +24,6 @@
 .modalContent {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
   align-items: center;
 }
 .linkList {
@@ -32,6 +31,21 @@
   flex-direction: row;
 }
 .linkList > span > img {
-  width: 80px;
-  height: 80px;
+  width: 50px;
+  height: 50px;
+}
+@media screen and (max-width: 450px) {
+  .portfolioModal {
+    width: 90%;
+    height: 100%;
+    flex-direction: column;
+  }
+  .modaltitle {
+    width: 100%;
+    height: 40%;
+  }
+  .modaltitle > img {
+    width: 70%;
+    height: 60%;
+  }
 }
