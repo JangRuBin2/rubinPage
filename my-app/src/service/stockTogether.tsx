@@ -1,14 +1,14 @@
 import { ReactElement, ReactNode } from 'react';
 import CloseBtn from "../images/closeBtn.png";
 import '../style/modal.css';
-class PortfolioContent {
-  constructor(public githubLink : string, public notionLink : string, public prjContent : string, public imgUrl : string) {}
-}
+import ModalClass from './modalClass';
+
 interface StockTogetherModalProps {
   handleClose: () => void;
   children?: ReactNode;
 }
-const portfolioContent = new PortfolioContent ('https://github.com/JangRuBin2/stockTogether','https://www.notion.so/kongukjae/Project-A-5-Hz-34c518401ee64f1093650ab5525aba16', '주식 거래 애플리케이션 입니다.', CloseBtn);
+const portfolioContent = ModalClass.constructor('https://github.com/JangRuBin2/stockTogether','https://www.notion.so/kongukjae/Project-A-5-Hz-34c518401ee64f1093650ab5525aba16', '주식 거래 애플리케이션 입니다.', CloseBtn)
+
 
 const StockTogetherModal = ({ handleClose }: StockTogetherModalProps): ReactElement => {
  const openLinkInNewTab = (url: string) => {
