@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import UmRB from "../images/umRubin.webp";
 import '../style/aboutMe.css';
-import Toggle from './toggle2';
+import Toggle from './toggle';
 const AboutMe = () : JSX.Element=> {
   // div 상태 관리
   const [showNewDiv, setShowNewDiv] = useState(false);
