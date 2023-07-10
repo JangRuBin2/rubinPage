@@ -9,10 +9,11 @@ const PortfolioModal = ({ handleClose }: PortfolioModalProps): ReactElement => {
   return (
     <>
     <div className="portfolioModal">
-      모달 테스트
+      <h1>제목</h1>
       <button onClick={handleClose}>
-      <img src={CloseBtn} alt="포폴 모달"  />
+      <img src={CloseBtn} alt="포폴 모달" className='close-btn'/>
       </button>
+      
       </div>
     </>
   )
