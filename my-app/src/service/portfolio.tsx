@@ -11,7 +11,7 @@ const Portfolio = ():JSX.Element => {
   const changeDiv =()=> {
     setDivIndex((divIndex + 1)% divs.length);
   }
-  return (<div className="container" onClick={changeDiv}>
+  return (<div className="container">
     {divs[divIndex]}
     </div>
   )
