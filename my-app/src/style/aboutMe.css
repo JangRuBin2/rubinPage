@@ -11,6 +11,12 @@
   width: 40%;
   height: 80%;
 }
+@media screen and (max-width: 450px) {
+  .meTitle img {
+    width: 100%;
+    height: 50%;
+  }
+}
 
 /* 날아오는 애니메이션 */
 @keyframes fly-in {
@@ -28,4 +34,9 @@
   animation: fly-in 1s ease-out;
   width: 50%;
   height: 90%;
+}
+@media screen and (max-width: 450px) {
+  .meBox {
+    flex-direction: column;
+  }
 }

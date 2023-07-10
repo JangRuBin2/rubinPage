@@ -20,7 +20,8 @@ const AboutMe = () : JSX.Element=> {
           </div>
           
           
-          {showNewDiv  && <h3 className="flyInDiv">저는 새로운 도전 도전을 즐깁니다.<br/>
+          {showNewDiv  && <h3 className="flyInDiv">
+            저는 새로운 일에 도전하는 것을 즐깁니다.<br/>
             언어와 도구에 제약 받지 않는 개발자가 되는 것이 목표입니다.<br/>
             </h3>}
         </div>
