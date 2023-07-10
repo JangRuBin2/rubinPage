@@ -1,18 +1,22 @@
-import { useState } from "react";
-import PrjA from "./projectA";
-import PrjB from "./projectB";
-import PrjC from "./projectC";
+import { useState } from 'react';
+import Kimochi from "../images/me.png";
+import PortfolioModal from './portfolioModal';
 const Portfolio = ():JSX.Element => {
-  // div 리스트
-  const divs = [<PrjC />,<PrjA />, <PrjB />];
-  // div index 상태 관리
-  const [divIndex, setDivIndex] = useState(0);
-  // 클릭 이벤트로 div 변경
-  const changeDiv =()=> {
-    setDivIndex((divIndex + 1)% divs.length);
+  const [modal, setModal] = useState(false);
+  const handleModal =()=> {
+    setModal(!modal)
   }
+  class PorFol {
+    constructor(public name : string, public imageUrl : string) {}
+  }
+  const portfolioList = [new PorFol("테스트",Kimochi)]
   return (<div className="container">
-    {divs[divIndex]}
+    {portfolioList.map((data, index)=> {
+    return <div key={index}>
+        <img src={Kimochi} alt={`${index}포토폴리오`}  onClick={handleModal} />
+      </div>
+    })}
+    {modal&& <PortfolioModal handleClose={handleModal} />}
     </div>
   )
 }
