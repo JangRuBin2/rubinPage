@@ -13,9 +13,6 @@ interface StockTogetherModalProps {
 const portfolioContent = new PortfolioContent(
   'https://github.com/JangRuBin2/stockTogether',
   'https://www.notion.so/kongukjae/Project-A-5-Hz-34c518401ee64f1093650ab5525aba16',
-  `주식 거래 애플리케이션입니다.
-  주식 초보자도 쉽게 접할 수 있게, 함께하는 주식 서비스를 만들었습니다.
-  `,
   Stock
 );
 
@@ -32,7 +29,10 @@ const StockTogetherModal = ({ handleClose }: StockTogetherModalProps): ReactElem
         </div>
         <div className='modalContent'>
           <h1>stockTogether</h1>
-          <h3>{portfolioContent.prjContent}</h3>
+          <h3>초보도 쉽게 주식을 시도할 수 있는 서비스입니다.<br/>
+              주식에 '탈것'의 형태를 도입하여, 주식 투자를 같이 하고 싶은 사람과 즐길 수 있습니다.<br/>
+              서버로부터 주식 데이터를 실시간으로 받아 차트로 그립니다.
+          </h3>
           <div className='linkList'>
           <span onClick={() => openLinkInNewTab(portfolioContent.githubLink)}>
             <img src={Github} alt="" />
