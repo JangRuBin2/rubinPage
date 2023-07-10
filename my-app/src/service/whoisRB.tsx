@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import UmRB from "../images/umRubin.webp";
 import '../style/aboutMe.css';
-import { ToggleOff, ToggleOn } from './toggle';
+import Toggle from './toggle2';
 const AboutMe = () : JSX.Element=> {
   const [showNewDiv, setShowNewDiv] = useState(false);
   const handleShowNewDiv = () => {
@@ -13,7 +13,10 @@ const AboutMe = () : JSX.Element=> {
           <div className='meTitle'>
             <img src={UmRB} alt="" style={{width : '300px', height : '400px'}}/>
             <h1>flying squirrel</h1>
-            <div onClick={handleShowNewDiv}> {!showNewDiv ? <ToggleOff /> : <ToggleOn />}</div>
+            {/* <div onClick={handleShowNewDiv}> {!showNewDiv ? <ToggleOff /> : <ToggleOn />}</div> */}
+            <div onClick={handleShowNewDiv}>
+            <Toggle />
+            </div>
           </div>
           
           
