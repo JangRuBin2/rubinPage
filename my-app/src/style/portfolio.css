@@ -2,11 +2,10 @@
   width: 100%;
   max-height: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 }
 .portfolio-item {
-  position: absolute;
   width: 300px;
   height: 250px;
   display: flex;
@@ -14,19 +13,6 @@
   align-items: center;
   justify-content: center;
   background-color: #c7484a;
-}
-.portfolio-item.left {
-  left: 300px;
-}
-
-.portfolio-item.centered {
-  width: 500px;
-  height: 400px;
-  z-index: 2;
-}
-
-.portfolio-item.right {
-  right: 300px;
 }
 .portfolio-item img {
   width: 100%;

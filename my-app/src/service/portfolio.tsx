@@ -20,7 +20,7 @@ const Portfolio = ():JSX.Element => {
   <div className="container">
     <div className='portfolioBox'>
       {portfolioList.map((data, index)=> {
-        return <div key={index} className={`portfolio-item ${index === 0 ? 'left' : index === 1 ? 'centered' : 'right'}`} >
+        return <div key={index} className={'portfolio-item'} >
         <img src={data.imageUrl} alt={`${index}포토폴리오`}  onClick={handleModal} />
         <h1>{`프로젝트 ${data.projectID}`}</h1>
       </div>
