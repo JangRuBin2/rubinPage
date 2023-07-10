@@ -36,7 +36,7 @@ const Portfolio = ():JSX.Element => {
           const Modal = modalList[index]; // modalList에서 현재 포트폴리오 항목과 맞는 모달 컴포넌트를 선택
           return <div key={index} className={'portfolio-item'} onClick={() => handleModal(index)}>
             <img src={data.imageUrl} alt={`${index}포토폴리오`}  />
-            <h1>{`${data.name}`}</h1>
+            <h2>{`${data.name}`}</h2>
             {modal && activeModal === index && <Modal handleClose={() => handleModal(index)} />}
           </div>
         })}
