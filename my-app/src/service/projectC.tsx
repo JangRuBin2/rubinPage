@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Perfect from "../images/perfect.jpg";
+import PokeDigi from "../images/pokeDigi.png";
 import "../style/portfolio.css";
 import PortfolioModal from './portfolioModal';
 const PrjC = () : JSX.Element => {
@@ -11,7 +11,7 @@ const PrjC = () : JSX.Element => {
     <div className="portfolBox">
     
     <div className="imgArea"  onClick={handleModal}>
-      <img src={Perfect} alt="프로젝트 사진" />
+      <img src={PokeDigi} alt="프로젝트 사진" />
     </div>
     
     <div className="textArea" >

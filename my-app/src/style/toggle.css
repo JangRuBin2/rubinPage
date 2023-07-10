@@ -18,11 +18,11 @@
   left: 4px;
   transform: translateY(-50%);
   border-radius: 50%;
-  background: #f03d3d;
+  background: #c7484a;
 }
 
 #toggle:checked ~ .toggleSwitch {
-  background: #f03d3d;
+  background: #c7484a;
 }
 
 #toggle:checked ~ .toggleSwitch .toggleButton {
